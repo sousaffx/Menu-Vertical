@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        a{
+            text-decoration: none;
+            color: black;           
+        }
+        body{
+            font-family: Arial;
+
+        }
+        ul{
+            list-style: none;
+        }
+        img{
+            width: 30px;
+        }
+        input[type="checkbox"]{
+            display: none;
+        }
+        nav{
+            background-color:rgba(16, 16, 16,.5) ;
+            width: 350px;
+            height: 100% ;
+            position: absolute ;
+            left: -350px;
+            transition: all.5s ;
+        }
+        input[type="checkbox"]:checked ~ nav{
+            transform: translateX(350px);
+        }
+        
+        ul{
+            top: 50px;
+            position: absolute;
+            width: 100%;
+        }
+        a{
+            background-color: rgb(56, 54, 54);
+            display: block;
+            padding: 20px 5px;
+            color: white;
+        }
+        a:hover{
+            background-color: rgb(176, 224, 230);
+            color: black;
+        }
+        label{
+            padding: 15px ;
+            position: absolute;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="chec">
+    <label for="chec">
+        <img src="c:\Users\joaop\Pictures\menu.png" alt="">
+    </label>
+
+    <nav>
+        <ul>
+            <li><a href="http://">HOME</a></li>
+            <li><a href="http://">Promoções</a></li>
+            <li><a href="http://">Contato</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
